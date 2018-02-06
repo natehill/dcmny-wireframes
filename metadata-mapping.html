@@ -34,9 +34,7 @@
             </li>
           -->
           </ul>
-          <div class="form-inline mt-2 mt-md-0">
-            <a class="text-white" href="">sign out</a>
-          </div>
+
         </div>
       </nav>
     </header>
@@ -76,7 +74,7 @@
       <form>
       <div class="form-row align-items-center text-center mt-3">
         <div>
-          <label class="mr-sm-2" for="inlineFormCustomSelect"><strong>choose a format</strong></label>
+          <label class="mr-sm-2" for="inlineFormCustomSelect"><strong>map to a format</strong></label>
           <select class="custom-select mr-sm-5" id="inlineFormCustomSelect">
             <option selected>MODS      </option>
             <option value="1">DC</option>
@@ -435,9 +433,31 @@
         </div>
       </div>  
       <hr />  
-       <div class="col-auto my-1">
-      <button type="submit" class="btn btn-primary">export</button>
-    </div>
+  <div class="row mt-3 mb-5 alert alert-info">
+    <div class="col-4">
+        </div>
+        <div class="col-4">
+     <form>
+      <div class="form-row align-items-center text-center mt-3">
+        <div>
+          <label class="mr-sm-2" for="inlineFormCustomSelect"><strong>export as</strong></label>
+          <select class="custom-select mr-sm-5" id="inlineFormCustomSelect">
+            <option selected>MODS</option>
+            <option value="1">DC</option>
+            <option value="2">QDC</option>
+            <option value="3">VRA</option>
+            <option value="4">CSV</option>
+            <option value="5">JSON</option>
+            <option value="6">RDF</option>
+            <option value="7">SQL</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+    <div class="col-4">
+        </div>
+  </div>
 </section>
 
     </main>
