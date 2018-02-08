@@ -134,32 +134,148 @@
     </div>
   </li>
 </ul>
-<button class="btn btn-primary" type="submit"><a data-toggle="collapse" href="#fullRecord" class="text-white">save</a></button>
+<button class="btn btn-primary" type="submit"><a  class="close" data-toggle="collapse" href="#fullRecord" class="text-white">save</a></button>
 </div>
 </div>
 <!--end-->
-<h3>About this item</h3>
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">View</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Edit description</a>
-  </li>
-<p class="lead">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-</ul>
+<div class="p-4 bg-light mb-3">
+  <h3>About this item</h3>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">View</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Edit description</a>
+    </li>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </ul>
+</div>
 
 
 
 <div class="alert alert-info">
   <h2>Actions</h2>
     <ul class="list-unstyled">
-            <li><a href="">add this item to another collection</a></li>
-            <li><a href="">remove this item from this collection</a></li>
-            <li><a href="">unpublish this item</a></li>
-            <li><a href="">delete this item</a></li>
+            <li>
+              <a data-toggle="collapse" href="#chooseCollection" role="button" aria-expanded="false">add this item to another collection</a>
+
+              <div class="collapse p-3" id="chooseCollection">
+                <div class="row">
+                <div class="col-6">
+                <form class="form-inline">
+                  <div class="form-group">
+                      <select class="custom-select mr-3" id="inlineFormCustomSelect">
+                        <option selected>Select a collection</option>
+                        <option value="1">Collection One</option>
+                        <option value="2">Collection Two</option>
+                        <option value="3">Collection Three</option>
+                      </select>
+                  </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">save</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <button type="button" class="close" data-toggle="collapse" href="#chooseCollection" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </div>
+                  </div>
+                </div>
+                </form>
+                
+              </div>
+            </li>
+            
+            <li>
+              <a  data-toggle="collapse" href="#removeItem" role="button" aria-expanded="false">remove this item from this collection</a>
+               <div class="collapse p-3" id="removeItem">
+                <div class="row">
+                <div class="col-6">
+                  <form class="form-inline">
+                  <div class="form-group">
+                    <div class="form-check form-row mr-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                      are you sure?
+                       </label>
+                     </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">do it!</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                       <button type="button" class="close" data-toggle="collapse" href="#removeItem" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </div>
+
+                    </div>
+              </form>
+              </div>
+            </li>
+
+            <li>
+              <a  data-toggle="collapse" href="#unpublishItem" role="button" aria-expanded="false">unpublish this item</a>
+               <div class="collapse p-3" id="unpublishItem">
+                <div class="row">
+                <div class="col-6">
+                  <form class="form-inline">
+                  <div class="form-group">
+                    <div class="form-check form-row mr-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                      are you sure?
+                       </label>
+                     </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">do it!</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                       <button type="button" class="close" data-toggle="collapse" href="#unpublishItem" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </div>
+
+                    </div>
+              </form>
+              </div>
+            </li>
+
+           <li>
+              <a  data-toggle="collapse" href="#deleteItem" role="button" aria-expanded="false">delete this item</a>
+               <div class="collapse p-3" id="deleteItem">
+                <div class="row">
+                <div class="col-6">
+                  <form class="form-inline">
+                  <div class="form-group">
+                    <div class="form-check form-row mr-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                      are you sure?
+                       </label>
+                     </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">do it!</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                       <button type="button" class="close" data-toggle="collapse" href="#deleteItem" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </div>
+
+                    </div>
+              </form>
+              </div>
+            </li>
+
             <li><a href="">view this item in public site</a></li>
     </ul>
     <h3 class="text-danger">Development</h3>
