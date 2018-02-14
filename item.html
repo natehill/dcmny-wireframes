@@ -52,6 +52,7 @@
 
 
 <h2>Collection this item is in</h2>
+<!--
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" href="#">View</a>
@@ -64,96 +65,369 @@
   </li>
 <img data-src="holder.js/100px250" class="img-fluid mb-4" alt="Generic responsive image" />
 </ul>
+-->
 
-<!--edit image section-->
-<div class="collapse" id="imageReplace">
-    <div class="alert alert-info">
-      <form>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-6">
-                <h2><label for="exampleFormControlFile1">Upload and Replace Image</label></h2>
-            </div>
-            <div class="col-6">
-              <button type="button" class="close" data-toggle="collapse" href="#imageReplace" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-               </button>
-             </div>
-           </div>
-          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div>
-        <button class="btn btn-primary" type="submit"><a data-toggle="collapse" href="#imageReplace" class="text-white">upload</a></button>
-      </form>
-    </div>
-</div>
-<!--end-->
+<!--tabbed records-->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="editmetadata-tab" data-toggle="tab" href="#editmetadata" role="tab" aria-controls="editmetadata" aria-selected="true">Edit Metadata</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="publicrecord-tab" data-toggle="tab" href="#publicrecord" role="tab" aria-controls="publicrecord" aria-selected="false">Public Record</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="modsxml-tab" data-toggle="tab" href="#modsxml" role="tab" aria-controls="modsxml" aria-selected="false">MODS XML</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="images-tab" data-toggle="tab" href="#images" role="tab" aria-controls="images" aria-selected="false">Images</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="thepublicview-tab" data-toggle="tab" href="#thepublicview" role="tab" aria-controls="thepublicview" aria-selected="false">Public View</a>
+  </li>
+</ul>
 
-<!--full record / metadata section-->
-<div class="collapse" id="fullRecord">
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="editmetadata" role="tabpanel" aria-labelledby="editmetadata-tab">
+
+
   <div class="alert alert-info">
     <div class="row">
       <div class="col-6">
-        <h2 class="mb-4">Metadata for this item</h2>
+        <h2 class="mb-4">Metadata Fields</h2>
       </div>
-      <div class="col-6">
-        <button type="button" class="close" data-toggle="collapse" href="#fullRecord" aria-label="Close">
-           <span aria-hidden="true">&times;</span>
-         </button>
-       </div>
+    </div>
+
+    <ul class="list-unstyled">
+      <li>
+        <p class="mb-0">field name</p>
+        <div class="alert-light p-2 mb-4">
+        click to edit
+        </div>
+      </li>
+      <li>
+        <p class="mb-0">field name</p>
+        <div class="alert-light p-2 mb-4">
+        click to edit
+        </div>
+      </li>
+      <li>
+        <p class="mb-0">field name</p>
+        <div class="alert-light p-2 mb-4">
+        click to edit
+        </div>
+      </li>
+      <li>
+        <p class="mb-0">field name</p>
+        <div class="alert-light p-2 mb-4">
+        click to edit
+        </div>
+      </li>
+      <li>
+        <p class="mb-0">field name</p>
+        <div class="alert-light p-2 mb-4">
+        click to edit
+        </div>
+      </li>
+    </ul>
+    <button class="btn btn-primary" type="submit"><a data-toggle="collapse" href="#fullRecord" class="text-white">save</a></button>
+  </div>
 </div>
 
-<ul class="list-unstyled">
-  <li>
-    <p class="mb-0">field name</p>
-    <div class="alert-light p-2 mb-4">
-    click to edit
+<div class="tab-pane fade" id="publicrecord" role="tabpanel" aria-labelledby="publicrecord-tab">
+
+never mind the formatting, this is just an example
+
+      <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
+                    <dt class=" first">
+          Identifier        </dt>
+        <dd class=" first">
+          Greenfield10        </dd>
+                      <dt class="">
+          Title        </dt>
+        <dd class="">
+          'Sit-in' Strikers Welcome Food Near...        </dd>
+                      <dt class="">
+          Corporate Name        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_name_corporate_namePart_ms%3ALong%5C%20Island%5C%20Press">Long Island Press</a>        </dd>
+                      <dt class="">
+          Role        </dt>
+        <dd class="">
+          Creator        </dd>
+                      <dt class="">
+          Location        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_subject_geographic_ms%3ANew%5C%20York">New York</a>        </dd>
+                      <dt class="">
+          Subject        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_subject_topic_ms%3AStrikes">Strikes</a><br/><a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_subject_topic_ms%3AActivists">Activists</a>        </dd>
+                      <dt class="">
+          Date Created        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_originInfo_encoding_w3cdtf_dateCreated_s%3A1937">1937</a>        </dd>
+                      <dt class="">
+          Description        </dt>
+        <dd class="">
+          Newspaper clipping about a sit-in strike. Appeared in the Long Island Press. Sent to Mr. Greenfield by Mr. James Manning.        </dd>
+                      <dt class="">
+          Note        </dt>
+        <dd class="">
+          Digital version published by Abraham Lincoln Brigade Archives (ALBA)        </dd>
+                      <dt class="">
+          Language        </dt>
+        <dd class="">
+          English        </dd>
+                      <dt class="">
+          Type of Resource        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_typeOfResource_ms%3Atext">text</a>        </dd>
+                      <dt class="">
+          Genre        </dt>
+        <dd class="">
+          <a href="/islandora/search?type=dismax&amp;f%5B0%5D=mods_genre_ms%3ANewspaper">Newspaper</a>        </dd>
+                      <dt class="">
+          Form        </dt>
+        <dd class="">
+          Paper        </dd>
+                      <dt class="">
+          Extent        </dt>
+        <dd class="">
+          5.25" x 6.25"        </dd>
+                      <dt class="">
+          Digital Origin        </dt>
+        <dd class="">
+          reformatted digital        </dd>
+                      <dt class="">
+          Digital Format        </dt>
+        <dd class="">
+          application/pdf        </dd>
+                      <dt class="">
+          Related Resource        </dt>
+        <dd class="">
+          See Greenfield9 for Mr. James Manning's accompanying letter.        </dd>
+                      <dt class="">
+          Collection        </dt>
+        <dd class="">
+          Herman Greenfield Papers, ALBA No. 249, Tamiment Library, NYU        </dd>
+                      <dt class="">
+          Rights        </dt>
+        <dd class="">
+          Copyright © 2009 New York University. All rights reserved.        </dd>
+                  </dl>
+</div>
+
+  <div class="tab-pane fade" id="modsxml" role="tabpanel" aria-labelledby="modsxml-tab">
+    <pre>
+      <code>
+never mind the lack of indentation, this is just an example
+
+&lt;mods xmlns=&quot;http://www.loc.gov/mods/v3&quot; xmlns:mods=&quot;http://www.loc.gov/mods/v3&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+&lt;titleInfo&gt;
+&lt;title&gt;&apos;Sit-in&apos; Strikers Welcome Food Near...&lt;/title&gt;
+&lt;/titleInfo&gt;
+&lt;abstract&gt;
+Newspaper clipping about a sit-in strike. Appeared in the Long Island Press. Sent to Mr. Greenfield by Mr. James Manning.
+&lt;/abstract&gt;
+&lt;name type=&quot;corporate&quot;&gt;
+&lt;namePart&gt;Long Island Press&lt;/namePart&gt;
+&lt;role&gt;
+&lt;roleTerm type=&quot;text&quot; authority=&quot;marcrelator&quot;&gt;Creator&lt;/roleTerm&gt;
+&lt;/role&gt;
+&lt;/name&gt;
+&lt;originInfo&gt;
+&lt;dateCreated encoding=&quot;w3cdtf&quot;&gt;1937&lt;/dateCreated&gt;
+&lt;/originInfo&gt;
+&lt;typeOfResource&gt;text&lt;/typeOfResource&gt;
+&lt;genre&gt;Newspaper&lt;/genre&gt;
+&lt;relatedItem type=&quot;host&quot;&gt;
+&lt;titleInfo&gt;
+&lt;title&gt;
+Herman Greenfield Papers, ALBA No. 249, Tamiment Library, NYU
+&lt;/title&gt;
+&lt;/titleInfo&gt;
+&lt;/relatedItem&gt;
+&lt;language&gt;
+&lt;languageTerm type=&quot;text&quot;&gt;English&lt;/languageTerm&gt;
+&lt;/language&gt;
+&lt;relatedItem&gt;
+&lt;note&gt;
+See Greenfield9 for Mr. James Manning&apos;s accompanying letter.
+&lt;/note&gt;
+&lt;/relatedItem&gt;
+&lt;subject&gt;
+&lt;geographic&gt;New York&lt;/geographic&gt;
+&lt;/subject&gt;
+&lt;accessCondition type=&quot;use and reproduction&quot;&gt;
+Copyright © 2009 New York University. All rights reserved.
+&lt;/accessCondition&gt;
+&lt;note&gt;
+Digital version published by Abraham Lincoln Brigade Archives (ALBA)
+&lt;/note&gt;
+&lt;identifier type=&quot;local&quot;&gt;Greenfield10&lt;/identifier&gt;
+&lt;subject authority=&quot;lctgm&quot;&gt;
+&lt;topic&gt;Strikes&lt;/topic&gt;
+&lt;/subject&gt;
+&lt;subject authority=&quot;lctgm&quot;&gt;
+&lt;topic&gt;Activists&lt;/topic&gt;
+&lt;/subject&gt;
+&lt;physicalDescription&gt;
+&lt;form&gt;Paper&lt;/form&gt;
+&lt;extent&gt;5.25&quot; x 6.25&quot;&lt;/extent&gt;
+&lt;internetMediaType&gt;application/pdf&lt;/internetMediaType&gt;
+&lt;digitalOrigin&gt;reformatted digital&lt;/digitalOrigin&gt;
+&lt;/physicalDescription&gt;
+&lt;/mods&gt;  
+    </pre>
+  </code>
+</div>
+
+  <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+<div class="row">
+  <div class="col-md-3 pt-4 m-3 text-center alert-info">
+      <div class="mx-auto" style="width: 230px;">
+        <ul class="list-unstyled">
+           <li>
+            <a href="item.html">title</a>
+          </li>
+          <li>
+            <strong>name of the file</strong>
+          </li>
+          <li>
+            <a href="item.html"><img data-src="holder.js/230x230" class="img-thumbnail float-left mr-3 mb-2" alt="whatever" /></a>
+          </li>
+          <li>
+            <form class="mt-2 mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+          </li>
+        </li>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+          set as primary image
+          </label>
+        </li>
+        </ul>
     </div>
-  </li>
-  <li>
-    <p class="mb-0">field name</p>
-    <div class="alert-light p-2 mb-4">
-    click to edit
+  </div>
+  <div class="col-md-3 pt-4 m-3 text-center alert-info">
+      <div class="mx-auto" style="width: 230px;">
+        <ul class="list-unstyled">
+           <li>
+            <a href="item.html">title</a>
+          </li>
+          <li>
+            <strong>name of the file</strong>
+          </li>
+          <li>
+            <a href="item.html"><img data-src="holder.js/230x230" class="img-thumbnail float-left mr-3 mb-2" alt="whatever" /></a>
+          </li>
+          <li>
+            <form class="mt-2 mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+          </li>
+                  </li>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+          set as primary image
+          </label>
+        </li>
+        </ul>
     </div>
-  </li>
-  <li>
-    <p class="mb-0">field name</p>
-    <div class="alert-light p-2 mb-4">
-    click to edit
+  </div>
+    <div class="col-md-3 pt-4 m-3 text-center alert-info">
+      <div class="mx-auto" style="width: 230px;">
+        <ul class="list-unstyled">
+           <li>
+            <a href="item.html">title</a>
+          </li>
+          <li>
+            <strong>name of the file</strong>
+          </li>
+          <li>
+            <a href="item.html"><img data-src="holder.js/230x230" class="img-thumbnail float-left mr-3 mb-2" alt="whatever" /></a>
+          </li>
+          <li>
+            <form class="mt-2 mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+          </li>
+                  </li>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+          set as primary image
+          </label>
+        </li>
+        </ul>
     </div>
-  </li>
-  <li>
-    <p class="mb-0">field name</p>
-    <div class="alert-light p-2 mb-4">
-    click to edit
+  </div>
+    <div class="col-md-3 pt-4 m-3 text-center alert-info">
+      <div class="mx-auto" style="width: 230px;">
+        <ul class="list-unstyled">
+           <li>
+            <a href="item.html">title</a>
+          </li>
+          <li>
+            <strong>name of the file</strong>
+          </li>
+          <li>
+            <a href="item.html"><img data-src="holder.js/230x230" class="img-thumbnail float-left mr-3 mb-2" alt="whatever" /></a>
+          </li>
+          <li>
+            <form class="mt-2 mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+          </li>
+                  </li>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+          set as primary image
+          </label>
+        </li>
+        </ul>
     </div>
-  </li>
-  <li>
-    <p class="mb-0">field name</p>
-    <div class="alert-light p-2 mb-4">
-    click to edit
+  </div>
+    <div class="col-md-3 pt-4 m-3 text-center alert-info">
+      <div class="mx-auto" style="width: 230px;">
+        <ul class="list-unstyled">
+           <li>
+            <a href="item.html">title</a>
+          </li>
+          <li>
+            <strong>name of the file</strong>
+          </li>
+          <li>
+            <a href="item.html"><img data-src="holder.js/230x230" class="img-thumbnail float-left mr-3 mb-2" alt="whatever" /></a>
+          </li>
+          <li>
+            <form class="mt-2 mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+                    </li>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+          set as primary image
+          </label>
+        </li>
+          </li>
+        </ul>
     </div>
-  </li>
-</ul>
-<button class="btn btn-primary" type="submit"><a  class="close" data-toggle="collapse" href="#fullRecord" class="text-white">save</a></button>
+  </div>
 </div>
 </div>
-<!--end-->
-<div class="p-4 bg-light mb-3">
-  <h3>About this item</h3>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">View</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Edit description</a>
-    </li>
-    <p class="lead">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </ul>
+<div class="tab-pane fade" id="thepublicview" role="tabpanel" aria-labelledby="thepublicview-tab">
+  <img data-src="holder.js/100px250" class="img-fluid mb-4" alt="Generic responsive image" />
+  <h2>About this item</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 
+</div>
+<!--and tabbed records-->
+
+
+<!--start actions menu-->
 
 <div class="alert alert-info">
   <h2>Actions</h2>
@@ -284,6 +558,7 @@
 </ul>
 </div>
 
+<!--end actions menu-->
     </main>
 
 
