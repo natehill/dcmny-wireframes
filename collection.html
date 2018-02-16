@@ -260,7 +260,31 @@
               </div>
             </li>
 
-        <li><a href="">add a collection to this collection</a></li>
+            <li>
+              <a  data-toggle="collapse" href="#addCollection" role="button" aria-expanded="false">add a collection to this collection</a>
+               <div class="collapse p-3" id="addCollection">
+                <div class="row">
+                  <div class="col-6">
+
+                   <form>
+                          <label class="mr-sm-2" for="inlineFormCustomSelect">choose the collection you want to add</label>
+                          <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>All</option>
+                            <option value="1">Collection One</option>
+                            <option value="2">Collection Two</option>
+                            <option value="3">Collection Three</option>
+                          </select>
+                    </form>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                       <button type="button" class="close" data-toggle="collapse" href="#addCollection" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </div>
+                  </div>
+              </div>
+            </li>
+
         <li><a href="metadata-mapping.html">metadata mapping</a></li>
         <li><div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
